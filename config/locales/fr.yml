@@ -1,0 +1,6 @@
+# French strings go here for Rails i18n
+fr:
+  label_issue_favicon: "Visualiser le nombre de tâches assignées en favicon."
+  label_show: "Visualiser le Favicon"
+  label_default: "Utiliser les paramètres par défaut"
+  label_hide: "Cacher le Favicon"
