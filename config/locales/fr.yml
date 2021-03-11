@@ -4,3 +4,5 @@ fr:
   label_show: "Visualiser le Favicon"
   label_default: "Utiliser les paramètres par défaut"
   label_hide: "Cacher le Favicon"
+  label_favicon_bg_color: Couleur de fond du Favicon
+  label_favicon_text_color: Couleur du texte du Favicon
