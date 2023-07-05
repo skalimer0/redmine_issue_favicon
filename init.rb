@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 require 'redmine'
-require 'issue_favicon_application_hooks'
-require 'issue_favicon_my_account_hooks'
-require 'issue_favicon_my_controller_patch'
+
+require File.expand_path('lib/issue_favicon_application_hooks', __dir__)
+require File.expand_path('lib/issue_favicon_my_account_hooks', __dir__)
+require File.expand_path('lib/issue_favicon_my_controller_patch', __dir__)
 
 Redmine::Plugin.register :redmine_issue_favicon do
   name 'Redmine Issue Favicon plugin'
@@ -12,7 +13,7 @@ Redmine::Plugin.register :redmine_issue_favicon do
   version '0.1.0'
   url 'https://github.com/akiko-pusu/redmine_issue_favicon'
   author_url 'http://twitter.com/akiko_pusu'
-  requires_redmine version_or_higher: '3.0.0'
+  requires_redmine version_or_higher: '5.0.0'
 
   settings partial: 'settings/redmine_issue_favicon',
            default: {
