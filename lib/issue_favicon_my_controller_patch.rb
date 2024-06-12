@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+require_dependency 'my_controller'
 
 module IssueFaviconMyControllerPatch
   extend ActiveSupport::Concern
@@ -32,4 +32,8 @@ module IssueFaviconMyControllerPatch
 
     params[:_method].present? && params[:_method] == 'put'
   end
+end
+
+class MyController < ApplicationController
+  prepend IssueFaviconMyControllerPatch
 end
